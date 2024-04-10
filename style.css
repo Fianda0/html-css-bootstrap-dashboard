@@ -8,12 +8,21 @@ body {
     font-family: sans-serif;
 }
 
+img {
+    width: 100%;
+}
+
 /* Header selector ////////////////////////////////////////////////////////////// */
 
 header {
     background-color: red;
     height: 4rem;
 }
+
+nav li {
+    padding: 0 0.5rem;
+}
+
 
 /* Main selector //////////////////////////////////////////////////////////////// */
 
