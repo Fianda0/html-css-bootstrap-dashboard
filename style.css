@@ -96,3 +96,7 @@ td>i {
 .card {
     padding: 0;
 }
+
+.offcanvas {
+    --bs-offcanvas-width: 50%;
+}
