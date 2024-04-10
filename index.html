@@ -24,17 +24,17 @@
         <!-- As a link -->
         <nav class="navbar">
             <div class="container-fluid">
-                <div class="col-2 p-1">
+                <div class="col-2">
                     <a class="navbar-brand" href="#">
                         <img src="./img/logo.svg" alt="Logo" class="d-inline-block align-text-top">
                     </a>
                 </div>
-                <div class="col-8 p-1">
+                <div class="col-8">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
                 </div>
-                <div class="col-2 p-1 ">
+                <div class="col-2">
 
                     <ul class="navbar-nav flex-row justify-content-evenly">
                         <li class="nav-item">
@@ -70,7 +70,20 @@
     <!-- Inizio main -->
     <main class="d-flex">
 
-        <div class="pagine"></div>
+        <div class="pagine d-flex flex-column justify-content-between pt-3">
+
+            <div class="d-flex flex-column align-items-center">
+                <a href=""><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href=""><i class="fa-solid fa-chart-simple"></i> Stats</a>
+
+                <a href=""><i class="fa-solid fa-signal"></i> Signals</a>
+            </div>
+
+            <div class="d-flex flex-column align-items-center pb-3">
+                <a href=""><i class="fa-solid fa-gear"></i> Admin</a>
+            </div>
+        </div>
 
 
         <div class="content-main">

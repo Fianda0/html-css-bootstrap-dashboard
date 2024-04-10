@@ -12,6 +12,10 @@ img {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* Header selector ////////////////////////////////////////////////////////////// */
 
 header {
@@ -21,6 +25,10 @@ header {
 
 nav li {
     padding: 0 0.5rem;
+}
+
+nav img {
+    width: 70%;
 }
 
 
@@ -35,6 +43,12 @@ main {
     background-color: blue;
     width: 8rem;
     height: 100%;
+}
+
+.pagine a {
+    padding: 0.5rem 0;
+    color: white;
+    display: block;
 }
 
 .content-main {
