@@ -7,3 +7,35 @@
 body {
     font-family: sans-serif;
 }
+
+/* Header selector ////////////////////////////////////////////////////////////// */
+
+header {
+    background-color: red;
+    height: 4rem;
+}
+
+/* Main selector //////////////////////////////////////////////////////////////// */
+
+main {
+    background-color: green;
+    height: calc(100vh - 4rem);
+}
+
+.pagine {
+    background-color: blue;
+    width: 8rem;
+    height: 100%;
+}
+
+.content-main {
+    background-color: yellowgreen;
+    width: calc(100% - 8rem);
+    height: 100%;
+}
+
+.information {
+    background-color: yellow;
+    width: 100%;
+    height: 8rem;
+}
