@@ -93,3 +93,7 @@ td>i {
     overflow: auto;
     padding-left: 8rem;
 }
+
+.card {
+    padding: 0;
+}
