@@ -55,7 +55,7 @@ td {
 
 main {
     padding-top: 4rem;
-    height: calc(100vh);
+    height: calc(100vh - 2rem);
 }
 
 .pagine {
@@ -63,7 +63,7 @@ main {
     background-image: url('./img/sidebar-bg.png');
     background-color: #051e34;
     width: 8rem;
-    height: calc(100vh - 4rem);
+    height: calc(100% - 4rem);
 }
 
 .item {
@@ -92,7 +92,7 @@ td>i {
 }
 
 .content-main {
-    height: 100%;
+    max-height: calc(100vh + 4rem);
     width: 100%;
     overflow: auto;
     padding-left: 8rem;
@@ -106,7 +106,7 @@ td>i {
     --bs-offcanvas-width: 50%;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     .desktop-logo {
         display: none;
@@ -114,6 +114,10 @@ td>i {
 
     .mobile-logo {
         display: block;
+    }
+
+    nav img {
+        width: 100%;
     }
 
     nav .mob-no {
@@ -135,4 +139,18 @@ td>i {
     .offcanvas {
         --bs-offcanvas-width: 100%;
     }
+}
+
+@media (max-width: 576px) {
+
+    th:nth-child(3),
+    td:nth-child(3) {
+        display: none;
+    }
+
+    th:nth-child(2),
+    td:nth-child(2) {
+        display: none;
+    }
+
 }
