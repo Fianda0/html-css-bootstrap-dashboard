@@ -22,40 +22,50 @@
     <header>
 
         <!-- As a link -->
-        <nav class="navbar">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-                <div class="col-2">
-                    <a class="navbar-brand" href="#">
+
+                <!-- Logo -->
+                <div class="col-lg-2 col-1">
+                    <a class="navbar-brand desktop-logo" href="#">
                         <img src="./img/logo.svg" alt="Logo" class="d-inline-block align-text-top">
                     </a>
+                    <a class="navbar-brand mobile-logo" href="#">
+                        <img src="./img/mobile-logo.png" alt="Logo" class="d-inline-block align-text-top ">
+                    </a>
                 </div>
-                <div class="col-8">
+
+                <!-- Cerca -->
+                <div class="col">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
                 </div>
-                <div class="col-2">
+
+                <!-- Item -->
+                <div class="col-lg-2 col-1">
 
                     <ul class="navbar-nav flex-row justify-content-evenly">
-                        <li class="nav-item">
+                        <li class="nav-item mob-no">
                             <a class="nav-link active" aria-current="page" href="#"><i
                                     class="fa-solid fa-list-ul"></i></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mob-no">
                             <a class="nav-link" href="#"><i class="fa-solid fa-circle-question"></i></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mob-no">
                             <a class="nav-link" href="#"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+
+                        <li class="nav-item dropdown dropstart">
+                            <a class="text-warning nav-link dropdown-toggle" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fa-solid fa-bell"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">Action two</a></li>
+                                <li><a class="dropdown-item" href="#">Action three</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -70,6 +80,8 @@
     <!-- Inizio main -->
     <main class="d-flex">
 
+
+        <!-- Pagine -->
         <div class="pagine d-flex flex-column justify-content-between pt-3">
 
             <div class="d-flex flex-column">
@@ -87,6 +99,9 @@
                     <div class="item"><i class="fa-solid fa-signal"></i> </div>
                     <span>Signals</span>
                 </a>
+
+
+
             </div>
 
             <div class="d-flex flex-column pb-3">
@@ -97,13 +112,15 @@
             </div>
         </div>
 
-
+        <!-- Main -->
         <div class="content-main">
+
+            <!-- Informazioni -->
             <div class="information">
                 <div class="row">
 
-
-                    <div class="col-6 py-3 row-gap-2 d-flex flex-column text-white">
+                    <!-- Colonna 1 BOOLEAN -->
+                    <div class="col-lg-6 col py-3 row-gap-2 d-flex flex-column text-white">
 
                         <!-- riga 1 -->
                         <div class="row ">
@@ -131,7 +148,8 @@
 
                     </div>
 
-                    <div class="col-3 py-3 row-gap-2 d-flex flex-column text-white">
+                    <!-- Colonna 2 n-studenti -->
+                    <div class="col-lg-3 col py-3 row-gap-2 d-flex flex-column text-white">
 
                         <div class="row">
                             <span>Studenti online negli ultimi 30 minuti</span>
@@ -142,14 +160,15 @@
                         </div>
                     </div>
 
-
-                    <div class="col-3 py-3 row-gap-2 d-flex flex-column text-white">
+                    <!-- Colonna 3 aggiungi studente -->
+                    <div class="col-lg-3 col py-3 row-gap-2 d-flex flex-column text-white">
                         <div class="row">
                             <span>Nuovo studente </span>
                             <span><button class="btn btn-primary border-white" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                                         class="fa-solid fa-plus"></i></button>
 
+                                <!-- Offcanvas -->
                                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                                     aria-labelledby="offcanvasRightLabel">
                                     <div class="offcanvas-header">
@@ -159,15 +178,104 @@
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                        ...
+
+                                        <!-- aggiungi nuovo studente -->
+
+                                        <!-- Nome - Cognome -->
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="">Nome</label>
+                                                <input type="text" class="form-control" placeholder="" aria-label="Nome"
+                                                    required>
+                                            </div>
+                                            <div class="col">
+                                                <label for="">Cognome</label>
+                                                <input type="text" class="form-control" placeholder=""
+                                                    aria-label="Cognome">
+                                            </div>
+                                        </div>
+
+                                        <!-- Mail - Password -->
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="inputEmail4" class="form-label">Email</label>
+                                                <input type="email" class="form-control" id="inputEmail4">
+                                            </div>
+                                            <div class="col">
+                                                <label for="inputPassword4" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="inputPassword4">
+                                            </div>
+                                        </div>
+
+                                        <!-- Indirizzo -->
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="inputAddress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="inputAddress"
+                                                    placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <!-- Citta` - Stato - Cap -->
+                                        <div class="row g-3">
+                                            <div class="col-md-6">
+                                                <label for="inputCity" class="form-label">Citta`</label>
+                                                <input type="text" class="form-control" id="inputCity">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="inputState" class="form-label">State</label>
+                                                <select id="inputState" class="form-select">
+                                                    <option selected>Scegli</option>
+                                                    <option>Italia</option>
+                                                    <option>Inghilterra</option>
+                                                    <option>Franca</option>
+                                                    <option>Spagna</option>
+
+                                                </select>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="cap">
+                                            </div>
+                                        </div>
+
+                                        <!-- Foto -->
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <label for="formFile" class="form-label">Foto
+                                                    example</label>
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                        </div>
+
+                                        <!-- checkbox -->
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Seleziona per proseguire
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <!-- Bottoni -->
+                                        <div class="row g-3">
+                                            <div class="col">
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </span>
                         </div>
                     </div>
+
                 </div>
             </div>
 
+            <!-- Content Main -->
             <div class="element-content">
                 <div class="row">
 
@@ -194,7 +302,7 @@
                                             <th scope="col">Nome</th>
                                             <th scope="col">Data inizio</th>
                                             <th scope="col">Roi</th>
-                                            <th scope="col">Stato</th>
+                                            <th class="text-center" scope="col">Stato</th>
                                             <th scope="col" class="text-center">Azioni</th>
                                         </tr>
                                     </thead>
@@ -205,7 +313,7 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -218,7 +326,7 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -231,7 +339,8 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-warning text-white">Process</span></td>
+                                            <td class="text-center"><span
+                                                    class="badge text-bg-warning text-white">Process</span></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -244,7 +353,7 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -257,7 +366,8 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-danger">Falled</span></td>
+                                            <td class="text-center"><span class="badge text-bg-danger">Falled</span>
+                                            </td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -270,7 +380,7 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -283,7 +393,7 @@
                                             <td><i class="fa-solid fa-code"></i> Classe 75</td>
                                             <td>15 Feb 2021</td>
                                             <td>20%</td>
-                                            <td><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
                                             <td class="text-center">
                                                 <button type="button" class="btn btn-light"><i
                                                         class="fa-solid fa-pen"></i></button>
@@ -360,7 +470,7 @@
 
                     </div>
 
-
+                    <!-- To Do -->
                     <div class="col-12 col-lg-4">
 
                         <!-- Todo -->
@@ -419,6 +529,7 @@
                 </div>
             </div>
 
+        </div>
 
     </main>
     <!-- Fine main -->
